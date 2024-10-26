@@ -6,12 +6,12 @@
 }
 
 body{
-    background-image: url(Angel_images/backgroundimgjustic.jpeg);
+    background-image: url(angel-work/backgroundimgjustic.jpeg);
 }
 
 /* main */
 main{
-    background-image: url(images/backgroundimgjustic.jpeg);
+    background-image: url(angel-work/backgroundimgjustic.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;
