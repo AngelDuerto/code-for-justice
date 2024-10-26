@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(brennan-work/backgroundimgjustic_720.jpg);
+    background-image: url(images/backgroundimgjustic.jpeg);
     color: #333; /* General text color */
 }
 
@@ -104,7 +104,7 @@ h1 {
 
 .imagecontainer {
     height: 400px; /* height of image */
-    background-image:url(brennan-work/clouds_720.png) ; 
+    background-image:url(images/clouds_720.png) ; 
     background-attachment: fixed;
     background-size: cover;
     display: flex; /* Center content */
