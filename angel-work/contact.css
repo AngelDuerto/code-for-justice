@@ -6,12 +6,12 @@
 }
 
 body{
-    background-image: url(angel-work/backgroundimgjustic.jpeg);
+    background-image: url(./backgroundimgjustic.jpeg);
 }
 
 /* main */
 main{
-    background-image: url(angel-work/backgroundimgjustic.jpeg);
+    background-image: url(./backgroundimgjustic.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +75,7 @@ p {
     border: none;
     border-radius: 5px;
     font-size: 18px; 
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 1s;
 }
 
@@ -90,6 +90,11 @@ p {
 .contact-details a {
     color: #3498db;
     text-decoration: none;
+}
+
+.contact-form button.disabled {
+    pointer-events: none;
+    background-color: #87949d;
 }
 
 @media (max-width: 375px) {
