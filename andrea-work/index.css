@@ -67,6 +67,30 @@ li {
     margin-right: 50px;
   }
 }
+@media screen and (max-width: 425px) {
+  nav {
+    height: 140px;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 250px;
+    width: 1px;
+    padding-right: 1%;
+    margin-right: 1px;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .links li a {
+    font-size: 14px;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 50px;
+  }
+}
 
 .logo {
   display: flex;
@@ -168,6 +192,7 @@ ul li a:hover {
 }
 .top_body h1 {
   font-size: 500%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
 }
 .top_body h3 {
@@ -177,7 +202,7 @@ ul li a:hover {
 }
 .top_body p {
   font-size: 190%;
-  width: 100%;
+  width: 97%;
   text-align: center;
 }
 /********************************middle logo start******************************** */
