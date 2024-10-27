@@ -285,7 +285,8 @@ ul li a:hover {
 }
 
 .primery-btn {
-  padding: 15px 30px;
+  padding: 15px 7px;
+  text-decoration: none;
   font-size: 16px;
   color: aliceblue;
   background: linear-gradient(90deg, rgb(17, 46, 237), rgb(76, 206, 249));
@@ -293,6 +294,7 @@ ul li a:hover {
   border: none;
   cursor: pointer;
 }
+
 /****************************************** footer start ********************************/
 footer {
   background-color: rgb(209, 221, 229, 0.667);
