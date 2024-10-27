@@ -124,6 +124,8 @@
         }
     });
 
+
+
     function validateForm() {
         const name = nameInput.value.trim();
         const email = emailInput.value.trim();
@@ -148,9 +150,23 @@
 
         alert("Thank you for your donation!");
     }
-});
+
+            
+        function clearAmountSelection() {
+            document.querySelectorAll(".amount").forEach(input => {
+                input.style.backgroundColor = "rgb(160, 176, 190)";
+                input.style.transform = "translateY(0)";
+            });
+        }
+        
+        document.querySelectorAll(".amount").forEach(amount => {
+            amount.addEventListener("click", function () {
+                clearAmountSelection();
+                    this.style.backgroundColor = "rgb(142, 156, 169)";
+                    this.style.transform = "translateY(2px)";
+            });
+        });         
+        });
 </script>
-        
-        
 </body> 
 </html>
