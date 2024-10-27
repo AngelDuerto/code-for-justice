@@ -322,6 +322,10 @@ footer {
     .links {
         width: auto;
     }
+
+    .logo img {
+        width: 1px;
+    }
     /* main body adjustment */
     .founded-section, .statement-section, .services-section {
         padding: 20px;
