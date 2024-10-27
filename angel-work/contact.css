@@ -45,7 +45,7 @@ body{
       font-size: 14px;
     }
   }
-  
+
   @media screen and (max-width: 900px) {
     nav {
       height: 140px;
