@@ -4,29 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* .nav-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .brand-logo img {
-    display: flex;
-    align-self: center;
-    height: 300px;
-  }
-  
-  #nav-style {
-    height: 130px;
-  }
-  
-  #ul-nav a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 130px;
-  } */
+/************************** start of nav design******************************* */
 
 body {
   background-image: url(images/backgroundimgjustic.jpeg);
@@ -89,6 +67,30 @@ li {
     margin-right: 50px;
   }
 }
+@media screen and (max-width: 425px) {
+  nav {
+    height: 140px;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    height: 250px;
+    width: 1px;
+    padding-right: 1%;
+    margin-right: 1px;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .links li a {
+    font-size: 14px;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 50px;
+  }
+}
 
 .logo {
   display: flex;
@@ -126,7 +128,7 @@ ul li a:hover {
   color: white;
   transition: 0.5s;
 }
-/* I original content but I removed it  */
+/* *************Our original content but I removed it****/
 /* .header-content {
     display: flex;
     flex-direction: column;
@@ -137,8 +139,8 @@ ul li a:hover {
     background-color: whitesmoke;
     background-image: url("images/topclouds.png");
   } */
-/* end of nav bar */
-
+/******************************************** end of nav bar **************************/
+/* *******************************start of slider*************************************** */
 #animation {
   display: flex;
   overflow: hidden;
@@ -182,7 +184,7 @@ ul li a:hover {
     left: 0;
   }
 }
-
+/************************************ top body text*********************** */
 .top_body {
   display: flex;
   align-items: center;
@@ -190,6 +192,7 @@ ul li a:hover {
 }
 .top_body h1 {
   font-size: 500%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
 }
 .top_body h3 {
@@ -199,109 +202,10 @@ ul li a:hover {
 }
 .top_body p {
   font-size: 190%;
-  width: 100%;
+  width: 97%;
   text-align: center;
 }
-/*************************************************************************** start of slider *********************************************************************/
-/* .radio {
-    display: none;
-  }
-  
-  .container1 {
-    position: relative;
-    max-width: 100px;
-    margin: 5% auto;
-  }
-  
-  .slide {
-    width: 100%; */
-/* position: relative;
-    height: 0;
-    padding-top: 100.25%;
-    overflow: hidden; */
-/* border: solid 1px #2e2e2e;
-    box-shadow: 0 0 40px rgb(0, 0, 0, 0.8); */
-/* .slider {
-    padding-top: 5.25%;
-    position: relative;
-    width: 100%;
-    height: 100%; */
-/* top: 1;
-    left: 1; */
-/* opacity: 0;
-  }
-  .slider img {
-    width: 35%; */
-/* height: 100px; */
-/* margin-left: 0%; */
-/* object-fit: cover; */
-/* image-rendering: -webkit-optimize-contrast, -moz-crisp-edges; *********** I canged the image *********/
-/* transform: scale(1.1);
-    transition: 1.3s;
-    margin-bottom: 5%;
-  }
-  .caption {
-    position: absolute;
-    margin-left: 35%;
-    text-align: center;
-    width: 35%;
-    left: 0%;
-    top: 12%;
-    color: black;
-    font-weight: 900;
-    font-size: 20px;
-    text-transform: uppercase;
-    /* letter-spacing: 5px; */
-/* line-height: 50px;
-    transition: 0.9%;
-    border-style: dotted;
-  } */
-/* .caption span {
-    display: block;
-    text-transform: initial;
-    font-size: 30px;
-    font-weight: 300;
-    color: black;
-    line-height: 15px;
-  }
-  .dots {
-    width: 100%;
-    position: absolute;
-    bottom: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dots label {
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    margin: 0 10px;
-    border-radius: 50%;
-    opacity: 0.3;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  .dots label:hover {
-    opacity: 1;
-  }
-  #radio-1:checked ~ #slide-1,
-  #radio-2.checked ~ #slide-2,
-  #radio-3:checked ~ #slide-3,
-  #radio-4:checked ~ #slide-4 {
-    opacity: 1;
-  }
-  
-  #radio-1:checked ~ #slide-1 img,
-  #radio-2.checked ~ #slide-2 img,
-  #radio-3:checked ~ #slide-3 img,
-  #radio-4:checked ~ #slide-4 img {
-    transform: scale(1);
-  }
-  */
-
-/* ******************************************************************End of slider **********************************************************************/
+/********************************middle logo start******************************** */
 .header-content img {
   margin-top: 5px;
   width: 100%;
@@ -310,26 +214,7 @@ ul li a:hover {
   border-bottom: solid 2px black;
   left: 0;
 }
-
-/* .header-content h1 {
-    margin-top: 2%;
-    font-size: 80px;
-    color: black;
-  } */
-
-/* .header-content h3 {
-    font-size: 40px;
-    color: #38b6ff;
-  }
-  
-  .header-content p {
-    font-size: 1.1rem;
-    color: black;
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-  } */
-
+/********************* bottom hover service containers start*************************** */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -385,7 +270,7 @@ ul li a:hover {
   text-align: center;
   font-size: large;
 }
-
+/********************************************* donate section start*************** */
 #donate {
   background-image: url("images/clouds.png");
   position: relative;
@@ -425,7 +310,8 @@ ul li a:hover {
 }
 
 .primery-btn {
-  padding: 15px 30px;
+  padding: 15px 7px;
+  text-decoration: none;
   font-size: 16px;
   color: aliceblue;
   background: linear-gradient(90deg, rgb(17, 46, 237), rgb(76, 206, 249));
@@ -434,6 +320,7 @@ ul li a:hover {
   cursor: pointer;
 }
 
+/****************************************** footer start ********************************/
 footer {
   background-color: rgb(209, 221, 229, 0.667);
 }
@@ -514,7 +401,7 @@ footer {
   font-weight: 400;
   margin: 10px;
 }
-
+/******************************** responsive code start  ******************************/
 @media (max-width: 1147px) {
   .top_body {
     flex-direction: column;
@@ -542,3 +429,4 @@ footer {
     align-content: center;
   }
 }
+/************************************* end of home page *******************************/
