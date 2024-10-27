@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="header">
-        <div class="links"> 
             <nav>
                 <div class="logo"><img src="andrea-work/images/Clear The Clouds (2)_processed.png"></div>
                 <div class="header">
@@ -41,20 +40,22 @@
                         <h1>Make a Donation</h1>
                         <p>Select Amount</p>
                         <div class="value">	
-                            <div class="stack">
+                            <!-- <div class="stack"> -->
                             <div class="amount">$19</div>
                             <div class="amount">$25</div>
                             <div class="amount">$36</div>
-                            </div>
-                            <div class="stack">
+                            <!-- </div> -->
+                            <!-- <div class="stack"> -->
                             <div class="amount">$50</div>
                             <div class="amount">$100</div>
                             <div class="amount">
                                 <input type="number" id="Other" placeholder="$">
                             </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
+
                             <div class="user-info">
+                                
                                 <p>Name</p>
                                 <input type="text" id="name" placeholder="Enter your name" required>
                                 <p>Email</p>
@@ -64,9 +65,11 @@
                             </div>
             
                                 <div class="dono-button">
-                                    <button>Donate Now</button>
+                                    <button type="submit">Donate Now</button>
                                 </div>
-                    </div>
+                            <div class="error-message"></div>
+                            <div class="thank-you-message"></div>
+                    </div>  
                 </div>	
             </main>
 
@@ -91,7 +94,79 @@
 			</div>
 				
 			<div class="footerBottom">
-				<p>Copyright &copy;2024; Designed by <span class="designer">Andrea Merlos, Angel Duerto, Anthony Montesdeoca, Adina Younus, Brennan Wooden, Blamah Kotay</span></p>
-			</div>
+                <p>Copyright &copy;2024; Designed by <span class="designer">Clear the Clouds Team</span></p>
+                </div>
 		</div>
     </footer>
+    
+
+    <script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+    const amounts = document.querySelectorAll('.amount');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('tel');
+    const donateButton = document.querySelector('.dono-button button');
+
+    amounts.forEach(amount => {
+        amount.addEventListener('click', function() {
+            amounts.forEach(a => a.classList.remove('pressed'));
+            this.classList.toggle('pressed');
+        });
+    });
+
+    donateButton.addEventListener('click', validateForm);
+    
+    document.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            validateForm();
+        }
+    });
+
+
+
+    function validateForm() {
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const phone = phoneInput.value.trim();
+
+        if (!name || !email || !phone) {
+            alert("Please fill all required fields.");
+            return;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email.");
+            return;
+        }
+
+        const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+        if (!phonePattern.test(phone)) {
+            alert("Please enter a valid phone number in the format ###-###-####.");
+            return;
+        }
+
+        alert("Thank you for your donation!");
+    }
+
+            
+        function clearAmountSelection() {
+            document.querySelectorAll(".amount").forEach(input => {
+                input.style.backgroundColor = "rgb(160, 176, 190)";
+                input.style.transform = "translateY(0)";
+            });
+        }
+        
+        document.querySelectorAll(".amount").forEach(amount => {
+            amount.addEventListener("click", function () {
+                clearAmountSelection();
+                    this.style.backgroundColor = "rgb(142, 156, 169)";
+                    this.style.transform = "translateY(2px)";
+            });
+        });         
+        });
+</script>
+</body> 
+</html>
